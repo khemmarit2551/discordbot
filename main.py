@@ -4,6 +4,7 @@ import threading
 import discord
 import requests
 from discord.ext import commands
+from myserver import server_on
 
 max = 10 # จำนวนสูงสุดการยิงเบอร์
 admin = '1229717851091238932' 
@@ -185,5 +186,7 @@ async def attack(interaction: nextcord.Interaction):
     )
     embed.set_image(url='https://media.discordapp.net/attachments/1182839753264070676/1183338724042485770/Bongo_Cat_Phonix_GIF_-_Bongo_Cat_Phonix_-_Discover__Share_GIFs.gif')
     await interaction.send(embed=embed, view=Button())
+
+server_on()
 
 bot.run(os.getenv('TOKEN'))
