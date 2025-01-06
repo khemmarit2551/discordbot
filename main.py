@@ -1,9 +1,9 @@
 import os
 import threading
 
-import nextcord
+import discord
 import requests
-from nextcord.ext import commands
+from discord.ext import commands
 
 max = 10 # จำนวนสูงสุดการยิงเบอร์
 admin = '1229717851091238932' 
